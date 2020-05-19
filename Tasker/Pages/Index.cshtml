@@ -15,13 +15,13 @@
             <th>Priority</th>
         </tr>
     </thead>
-    @foreach(var task in Model.Tasks)
+    @foreach (var task in Model.Tasks)
     {
         <tr>
-            <th>@task.Id</th>
-            <th>@task.Title</th>
-            <th>@task.Description</th>
-            <th>@task.Priority</th>
+            <td>@task.Id</td>
+            <td>@task.Title</td>
+            <td>@task.Description</td>
+            <td>@task.Priority</td>
         </tr>
     }
-</table>
+</table> 
