@@ -26,7 +26,7 @@ namespace Tasker.Pages
 
         public IActionResult OnPost()
         {
-            _context.Tasks.Add(this.NewTask);
+            _context.Tasks.Add(NewTask);
             _context.SaveChanges();
 
             return RedirectToPage("Index");
